@@ -1,7 +1,7 @@
 # Budgeting2Go
 Online/Offline Budget Trackers
 ## Deployed Application Link
-_https://git.heroku.com/budgeting2go.git_
+_https://budgeting2go.herokuapp.com/_
 
 ## Table of Contents
 
