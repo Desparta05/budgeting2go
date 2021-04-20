@@ -1,15 +1,15 @@
 let db;
 let budgetVersion;
 
-const request = indexedDB.open(`budgetDb`, budgetVersion || 1);
+const request = indexedDB.open(`budgetDB`, budgetVersion || 1);
 
 request.onupgradeneeded = function (event) {
-    console.log(`Upgrade needed for budgetDb`);
+    console.log(`Upgrade needed for budgetDB`);
 
     const { oldVersion } = event;
     const newVersion = event.newVersion || db.version;
 
-    console.log(`budgetDb updated from version ${oldVersion} to ${newVersion}`);
+    console.log(`budgetDB updated from version ${oldVersion} to ${newVersion}`);
 
     db = event.target.result;
 
