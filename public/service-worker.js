@@ -5,6 +5,7 @@ const FILES_TO_CACHE = [
     "/index.html",
     "/index.js",
     "/style.css",
+    "/db.js",
     "/manifest.webmanifest",
     "/service-worker.js",
     "/icons/munny-icon-128x128.png",
@@ -64,6 +65,7 @@ self.addEventListener("fetch", function (evt) {
                         // Network request failed, try to get it from the cache.
                         return cache.match(evt.request);
                     });
+            //catches errors if any during the open Data_cache
             }).catch(err => console.log(err))
         );
 
