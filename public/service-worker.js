@@ -1,5 +1,3 @@
-const CACHE_NAME = "static-cache-v2";
-const DATA_CACHE_NAME = "data-cache-v1";
 const FILES_TO_CACHE = [
     "/",
     "/index.html",
@@ -11,6 +9,9 @@ const FILES_TO_CACHE = [
     "/icons/munny-icon-128x128.png",
     "/icons/pika-icon-512x512.png",
 ];
+
+const CACHE_NAME = "static-cache-v2";
+const DATA_CACHE_NAME = "data-cache-v1";
 
 // install
 self.addEventListener("install", function (evt) {
